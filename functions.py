@@ -7,7 +7,7 @@ import spacy
 from spacy import displacy
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
-model_path = os.path.join(current_dir, 'lens_model', 'output', 'model-best')
+model_path = os.path.join(current_dir, 'lens_model')
 lens = spacy.load(model_path)
 
 BG_COLOR = {"TRT": "#997a8d", "SYM": "#db7093", "MET": "#ffb6c1", "CANC_T": "#e68fac", "SIZE": "#fc89ac", "EMO": "#f78fa7", "PPL": "#dea5a4", "MED": "#e18e96",

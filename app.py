@@ -377,5 +377,3 @@ elif MCT_TEXT and not EXAMPLE_TEXT and not SCT_TEXT:
         st.error("No entities to download.")
 else:
     st.error(f'''**NoInputText:** No input text to analyse...''', icon="🧐")
-
-

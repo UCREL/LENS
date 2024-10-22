@@ -1,4 +1,5 @@
 numpy
+spacy
 pandas
 openpyxl
 spacy-transformers
