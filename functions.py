@@ -1,14 +1,8 @@
-import collections
-import warnings
-warnings.filterwarnings('ignore', category=FutureWarning)
-
 import os
+import collections
 import spacy
-from spacy import displacy
 
-current_dir = os.path.dirname(os.path.abspath(__file__))
-model_path = os.path.join(current_dir, 'lens_model')
-lens = spacy.load(model_path)
+lens = spacy.load('lens_model')
 
 BG_COLOR = {"TRT": "#997a8d", "SYM": "#db7093", "MET": "#ffb6c1", "CANC_T": "#e68fac", "SIZE": "#fc89ac", "EMO": "#f78fa7", "PPL": "#dea5a4", "MED": "#e18e96",
                           "MHD": "#ff91af", "ORG": "#ff91a4", "ADV_EFF": "#f19cbb", "INV": "#efbbcc", "POB": "#F9CBCB", "EGY": "#e8ccd7", "DUR": "#f7bfbe", "AGE": "#c4c3d0",
@@ -71,7 +65,6 @@ def show_plain_text(txtstr):
   return f"{start_mark}{txtstr}{end_mark}"
 
 #=============================  Building the Spacy model  ===================================
-
 def display_entities(text, tag_list=None):
     doc = lens(text)
     tag_list = tag_list
