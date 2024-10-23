@@ -1,8 +1,12 @@
+# import os
+# import collections
+# import spacy
+
+# lens = spacy.load('lens_model')
+
 import os
 import collections
-import spacy
-
-lens = spacy.load('lens_model')
+import onco_lens_ner as lens
 
 BG_COLOR = {"TRT": "#997a8d", "SYM": "#db7093", "MET": "#ffb6c1", "CANC_T": "#e68fac", "SIZE": "#fc89ac", "EMO": "#f78fa7", "PPL": "#dea5a4", "MED": "#e18e96",
                           "MHD": "#ff91af", "ORG": "#ff91a4", "ADV_EFF": "#f19cbb", "INV": "#efbbcc", "POB": "#F9CBCB", "EGY": "#e8ccd7", "DUR": "#f7bfbe", "AGE": "#c4c3d0",
