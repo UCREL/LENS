@@ -17,7 +17,7 @@ st.set_page_config(
      }
  )
 
-@st.cache_data(hash_funcs={spacy.tokens.doc.Doc: lambda _: None})
+# @st.cache_data(hash_funcs={spacy.tokens.doc.Doc: lambda _: None})
 def lens_extractor(text):
     return Extractor(text)
 
