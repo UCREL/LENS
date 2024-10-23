@@ -5,7 +5,6 @@ from functions import *
 import pandas as pd
 from io import BytesIO
 
-
 st.set_page_config(
      page_title = 'LENS: LEARNING ENTITIES FROM NARRATIVES OF SKIN CANCER',
      page_icon = '🎗', #🔍🔎🎗
@@ -17,24 +16,6 @@ st.set_page_config(
         #  'About': '''## Understanding imprecise space and time in narratives through qualitative representations, reasoning, and visualisation'''
      }
  )
- 
-# with st.sidebar.expander("🤗 Please, cite this app's paper..."):
-    # st.markdown("""
-    # ```
-    # @inproceedings{ezeani_Text2Story_2023,
-      # author={Ezeani, Ignatius and Rayson, Paul and Gregory, Ian},
-      # title={Extracting Imprecise Geographical and Temporal References from Journey Narratives},
-      # booktitle={{Sixth Workshop on Narrative Extraction From Texts held in conjunction with the 45th European Conference on Information Retrieval (ECIR 2023)}},
-      # year={2023},
-      # editor={Campos, Ricardo and Jorge, Alípio Mário and Jatowt, Adam and Bhatia, Sumit and Litvak, Marina},
-      # pages={113--118},
-      # organization={CEUR Workshop Proceedings (CEUR-WS.org)},
-      # publisher={CEUR Workshop Proceedings (CEUR-WS.org, ISSN 1613-0073)},
-      # month={April,2}
-    # }
-    # ```
-    # """)
-
 
 @st.cache_data(hash_funcs={spacy.tokens.doc.Doc: lambda _: None})
 def lens_extractor(text):
