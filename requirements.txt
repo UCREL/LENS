@@ -1,5 +1,5 @@
-numpy
-spacy
-pandas
+numpy==1.26.4
+spacy==3.7.6
+pandas==2.1.4
 openpyxl
-spacy-transformers
+spacy-transformers==1.3.5
